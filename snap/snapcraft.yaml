@@ -1,0 +1,54 @@
+name: mate-smart-lock
+base: core24
+version: '0.1.0'
+title: Mate Smart Lock
+summary: Automagic screen lock/unlock based on Bluetooth proximity
+description: |
+  A modern alternative to BlueProximity for Linux. Automatically locks
+  and unlocks your session based on the proximity of a paired Bluetooth
+  device (typically your smartphone).
+
+  Features:
+  - Auto-lock: locks the screen when your phone disconnects
+  - Auto-unlock: unlocks when your phone reconnects
+  - System tray icon with quick access to settings
+  - Configurable polling interval and debounce limit to avoid false positives
+  - Custom lock/unlock commands via Advanced settings
+
+grade: stable
+confinement: strict
+
+license: MIT
+website: https://github.com/s7ntech82/Mate-Smart-Lock
+contact: info@ismailnasry.it
+issues: https://github.com/s7ntech82/Mate-Smart-Lock/issues
+source-code: https://github.com/s7ntech82/Mate-Smart-Lock
+
+apps:
+  mate-smart-lock:
+    command: bin/mate-smart-lock
+    extensions: [gnome]
+    plugs:
+      - bluez
+      - login-session-control
+      - screen-inhibit-control
+      - unity7
+    slots:
+      - dbus-app
+
+slots:
+  dbus-app:
+    interface: dbus
+    bus: session
+    name: org.mate_smart_lock.app
+
+parts:
+  mate-smart-lock:
+    plugin: python
+    source: .
+    python-packages:
+      - PyGObject
+    stage-packages:
+      - gir1.2-appindicator3-0.1
+      - gir1.2-ayatanaappindicator3-0.1
+      - bluez
