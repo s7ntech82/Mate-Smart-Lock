@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Mate Smart Lock
+Comment=Automagic screen lock/unlock based on Bluetooth proximity
+Exec=mate-smart-lock
+Icon=mate-smart-lock
+Terminal=false
+Type=Application
+Categories=Settings;HardwareSettings;
+Keywords=bluetooth;lock;proximity;screen;security;
+StartupNotify=true
