@@ -42,6 +42,16 @@ slots:
     bus: session
     name: org.mate_smart_lock.app
 
+lint:
+  ignore:
+    - library:usr/lib/x86_64-linux-gnu/libayatana-appindicator3.so.1.0.0
+    - library:usr/lib/x86_64-linux-gnu/libcolordprivate.so.2.0.5
+    - library:usr/lib/x86_64-linux-gnu/libdconf.so.1.0.0
+    - library:usr/lib/x86_64-linux-gnu/libharfbuzz-gobject.so.0.60830.0
+    - library:usr/lib/x86_64-linux-gnu/libicuio.so.74.2
+    - library:usr/lib/x86_64-linux-gnu/libicutest.so.74.2
+    - library:usr/lib/x86_64-linux-gnu/libpangoxft-1.0.so.0.5200.1
+
 parts:
   mate-smart-lock:
     plugin: python
