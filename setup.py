@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='mate-smart-lock',
-    version='0.1.0',
+    version='0.1.1',
     description='Automagic screen lock/unlock based on Bluetooth proximity',
     author='Ismail Nasry',
     author_email='info@ismailnasry.it',

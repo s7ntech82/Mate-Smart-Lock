@@ -4,7 +4,7 @@
 set -e
 
 APP_NAME="mate-smart-lock"
-VERSION="0.1.0"
+VERSION="0.1.1"
 GITHUB_REPO="s7ntech82/Mate-Smart-Lock"
 RELEASES_URL="https://github.com/${GITHUB_REPO}/releases/download/v${VERSION}"
 
