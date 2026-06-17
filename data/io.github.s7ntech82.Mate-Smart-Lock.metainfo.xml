@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.s7ntech82.Mate-Smart-Lock</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <name>Mate Smart Lock</name>
+  <summary>Automatically lock and unlock your session based on Bluetooth proximity</summary>
+
+  <description>
+    <p>
+      Mate Smart Lock monitors a paired Bluetooth device, such as your phone,
+      and locks your Linux session when the device goes out of range.
+    </p>
+    <p>
+      When the device reconnects, it can unlock the session again if your
+      system policy allows it. The app runs as a lightweight GTK tray utility
+      and stores settings locally.
+    </p>
+    <ul>
+      <li>Monitor paired Bluetooth devices through BlueZ</li>
+      <li>Lock through desktop screensaver interfaces or systemd-logind</li>
+      <li>Configure polling interval and disconnect debounce</li>
+      <li>Override lock and unlock commands when needed</li>
+    </ul>
+  </description>
+
+  <launchable type="desktop-id">io.github.s7ntech82.Mate-Smart-Lock.desktop</launchable>
+  <content_rating type="oars-1.1" />
+
+  <developer id="io.github.s7ntech82">
+    <name>Ismail Nasry</name>
+  </developer>
+
+  <url type="homepage">https://github.com/s7ntech82/Mate-Smart-Lock</url>
+  <url type="bugtracker">https://github.com/s7ntech82/Mate-Smart-Lock/issues</url>
+  <url type="vcs-browser">https://github.com/s7ntech82/Mate-Smart-Lock</url>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/s7ntech82/Mate-Smart-Lock/main/docs/screenshots/device.png</image>
+      <caption>Select a paired Bluetooth device to monitor</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/s7ntech82/Mate-Smart-Lock/main/docs/screenshots/behavior.png</image>
+      <caption>Configure automatic lock and unlock behavior</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/s7ntech82/Mate-Smart-Lock/main/docs/screenshots/advanced.png</image>
+      <caption>Customize lock and unlock commands</caption>
+    </screenshot>
+  </screenshots>
+
+  <releases>
+    <release version="0.1.0" date="2026-06-15">
+      <description>
+        <p>Initial Flathub packaging release.</p>
+      </description>
+    </release>
+  </releases>
+
+  <provides>
+    <binary>mate-smart-lock</binary>
+  </provides>
+</component>

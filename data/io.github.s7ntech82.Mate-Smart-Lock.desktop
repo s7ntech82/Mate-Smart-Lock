@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Mate Smart Lock
+Comment=Automatically lock and unlock your session based on Bluetooth proximity
+Exec=mate-smart-lock
+Icon=io.github.s7ntech82.Mate-Smart-Lock
+Terminal=false
+Type=Application
+Categories=Settings;HardwareSettings;
+Keywords=bluetooth;lock;proximity;screen;security;
+StartupNotify=true

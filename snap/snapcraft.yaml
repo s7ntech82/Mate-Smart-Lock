@@ -19,8 +19,8 @@ grade: stable
 confinement: strict
 
 license: MIT
-website: https://github.com/s7ntech82/Mate-Smart-Lock
-contact: https://github.com/s7ntech82/Mate-Smart-Lock/issues
+website: https://ismailnasry.it/project/mate-smart-lock/
+contact: info@ismailnasry.it
 issues: https://github.com/s7ntech82/Mate-Smart-Lock/issues
 source-code: https://github.com/s7ntech82/Mate-Smart-Lock
 
@@ -40,7 +40,7 @@ slots:
   dbus-app:
     interface: dbus
     bus: session
-    name: org.mate_smart_lock.app
+    name: io.github.s7ntech82.Mate-Smart-Lock
 
 lint:
   ignore:
