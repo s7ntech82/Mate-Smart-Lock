@@ -41,7 +41,7 @@ sudo snap install mate-smart-lock
 ### Option B — Debian/Ubuntu (.deb)
 
 ```bash
-sudo dpkg -i mate-smart-lock_0.1.1_all.deb
+sudo dpkg -i mate-smart-lock_0.1.2_all.deb
 sudo apt-get install -f   # resolve any missing dependencies
 ```
 
