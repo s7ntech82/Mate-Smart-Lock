@@ -25,4 +25,4 @@ modules:
     sources:
       - type: git
         url: https://github.com/s7ntech82/Mate-Smart-Lock.git
-        commit: 5d31ed6b27700f9a98436f491766754b066ed061
+        commit: e5d70bcc414e58e07a924da2938520ef0b18b71f
