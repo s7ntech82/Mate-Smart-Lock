@@ -5,13 +5,12 @@ from gi.repository import Gtk, Gio
 from .core.config import Config
 from .core.lock_manager import LockManager
 from .core.proximity_monitor import ProximityMonitor
-from .constants import APP_ID
 from .ui.tray_icon import TrayIcon
 from .ui.main_window import MainWindow
 
 class MateSmartLockApp(Gtk.Application):
     def __init__(self):
-        super().__init__(application_id=APP_ID, flags=Gio.ApplicationFlags.FLAGS_NONE)
+        super().__init__(application_id="org.mate_smart_lock.app", flags=Gio.ApplicationFlags.FLAGS_NONE)
         self.config = Config()
         self.lock_manager = LockManager(self.config)
         self.proximity_monitor = ProximityMonitor(self.config, self.lock_manager)

@@ -40,7 +40,7 @@ slots:
   dbus-app:
     interface: dbus
     bus: session
-    name: io.github.s7ntech82.Mate-Smart-Lock
+    name: org.mate_smart_lock.app
 
 lint:
   ignore:

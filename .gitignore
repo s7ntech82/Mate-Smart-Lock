@@ -2,11 +2,6 @@
 build/
 *.deb
 *.snap
-.flatpak-builder/
-builddir/
-builddir-test/
-repo/
-repo-test/
 
 # Python
 __pycache__/
